@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positioning</title>
+
+  <style>
+
+          body{
+            height: 1000px;
+            padding-left: 100px;
+            padding-top: 35px;
+          }
+
+          .header{
+             background-color: black;
+             color: white;
+             position: fixed;
+             top: 10px;
+             left: 5px;
+             right: 0;
+            }
+
+           .div1{
+            background-color: rgb(60, 241, 241);
+            width: 200px;
+            height: 200px;
+           }
+
+
+           .div2{
+            background-color: rgb(152, 45, 214);
+            width: 200px;
+            height: 200px;
+           }
+
+
+           .sidebar{
+             background-color: brown;
+             top: 40px;
+             position: fixed;
+             bottom: 0;
+             left: 5px;
+             width: 100px;
+           }
+  </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        SIDEBAR
+    </div>
+       <div class="header">
+        Header
+       </div>
+       <div class="div1">DIV1</div>
+       <div class="div2">DIV2</div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover effect</title>
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <style>
+
+            
+              body{
+               padding-top: 10px;
+              }
+
+
+             .overall-container{
+                 width: 500px;
+                 height: 500px;
+                box-shadow: 1px 2px 5px black ;
+                 margin: 0 auto;
+
+             }
+
+             .cover{
+              width: 100%;
+              height: 350px;
+             }
+
+
+      
+             .channel-info{
+              display: grid;
+              grid-template-columns: 70px 1fr;
+              padding-top: 20px;
+             }
+
+             .profile-pic{
+              width: 60px;
+              height: 60px;
+              border-radius: 100px;
+              padding-left: 8px;
+             }
+
+             .p1{
+              margin-top: 0;
+              font-weight: 500;
+             }
+
+             
+             .channel-stats{
+              margin-left: 40px;
+             }
+
+             p{
+              font-size: 16px;
+              font-family: Roboto;
+             }
+
+
+            #h{
+              position: relative;
+            }
+
+
+         
+             .tooltip{
+               position: absolute;
+               bottom: -185px;
+               opacity: 0;
+               pointer-events: none;
+               transition: 0.9s;
+               box-shadow: 1px 2px 5px black ;
+               width: 500px;
+             }
+
+
+             #h:hover .tooltip{
+              opacity: 1;
+             }
+
+             .p2{
+              opacity: 0.7;
+             }
+
+             #h{
+              cursor: pointer;
+             }
+
+             @media (max-width:600px) {
+              .overall-container{
+                width: 300px;
+                height: 350px;
+              }
+
+              .cover{
+              width: 100%;
+              height: 200px;
+             }
+
+
+             .profile-pic{
+              width: 100%;
+              height: 60px;
+              border-radius: 100px;
+              padding-left: 8px;
+             }
+
+
+             p{
+              font-size: 16px;
+              font-family: Roboto;
+             }
+
+
+             .channel-info{
+              display: grid;
+              grid-template-columns: 60px 1fr;
+              padding-top: 20px;
+             }
+
+
+             .tooltip{
+               position: absolute;
+               bottom: -185px;
+               opacity: 0;
+               pointer-events: none;
+               transition: 0.9s;
+               box-shadow: 1px 2px 5px black ;
+               width: 300px;
+               font-size: 16px;
+               font-family: Roboto;
+             }
+
+
+             .p2{
+              opacity: 0.8;
+             }
+              
+             }
+
+            
+             
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+       <div class="overall-container">
+            
+             <img src="image\BUG1.webp" class="cover">
+
+             <div class="channel-info">
+                   <div class="channel-picture-container" id="h">
+                       <img src="image\BUG2.jpg" alt="" class="profile-pic" id="pic">
+
+                       <div class="tooltip">
+                        <div class="channel-info">
+                          <div class="channel-picture-container">
+                              <img src="image\BUG2.jpg" alt="" class="profile-pic">
+                          </div>
+       
+                          <div class="channel-stats">
+                               <p class="p1">Lamborghini cars</p>
+                               <p>Cars lovers</p>
+                               <p>3.4M &bull; 6 months ago</p>
+                          </div>
+                          </div>
+                       </div>
+
+                   </div>
+
+                   <div class="channel-stats">
+                        <p class="p1">Lamborghini cars</p>
+                        <p class="p2">Cars lovers</p>
+                        <p class="p2">3.4M &bull; 6 months ago</p>
+                   </div>
+             </div>
+       </div>
+</body>
+</html>
